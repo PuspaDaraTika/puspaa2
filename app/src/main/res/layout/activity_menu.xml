@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<!--><?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -8,12 +8,111 @@
 
 
     <ImageView
+        android:id="@+id/iv.menu"
         android:layout_width="200dp"
         android:layout_height="200dp"
         android:layout_centerInParent="true"
-        android:src="@drawable/menu"
-        android:id="@+id/iv.menu">
-    </ImageView>
+        android:src="@drawable/menu"></ImageView>
+
+
+</RelativeLayout></!-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ungumuda"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@color/ungu">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="50dp"
+            android:gravity="center"
+            android:text="puspadaratika"
+            android:textColor="@color/ungumuda"
+            android:textSize="40dp"
+            android:textStyle="bold">
+
+        </TextView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="50dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="200dp"
+            android:orientation="vertical"
+            tools:context=".MainActivity">
+            <ImageView
+                android:id="@+id/iv_telpon"
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:src="@drawable/onlineorder"
+                android:background="@color/white">
+            </ImageView>
+            <ImageView
+                android:id="@+id/iv_salad"
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:src="@drawable/salad"
+                android:layout_marginTop="20dp"
+                android:background="@color/white">
+            </ImageView>
+            <ImageView
+                android:id="@+id/iv_pizza"
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:src="@drawable/pizza"
+                android:layout_marginTop="20dp"
+                android:background="@color/white">
+            </ImageView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="200dp"
+            android:orientation="vertical"
+            tools:context=".MainActivity">
+            <ImageView
+                android:id="@+id/iv_foodpack"
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:src="@drawable/foodpack"
+                android:background="@color/white"></ImageView>
+            <ImageView
+                android:id="@+id/iv_fastfood"
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:src="@drawable/fastfood"
+                android:layout_marginTop="20dp"
+                android:background="@color/white"></ImageView>
+            <ImageView
+                android:id="@+id/iv_ayam"
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:src="@drawable/chicken"
+                android:layout_marginTop="20dp"
+                android:background="@color/white"></ImageView>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
 
 
 </RelativeLayout>
